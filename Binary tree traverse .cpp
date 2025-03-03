@@ -19,7 +19,6 @@ node* newNode(int data) {
   return (newNode);
 }
 
-// Insert a node in level order
 node* InsertNode(node* root, int data)
 {
     if (root == NULL) {
@@ -49,8 +48,6 @@ node* InsertNode(node* root, int data)
     }
 }
 
-
-// Traverse Preorder
 void traversePreOrder(struct node *temp) {
   if (temp != NULL) {
     cout << " " << temp->data;
@@ -59,7 +56,6 @@ void traversePreOrder(struct node *temp) {
   }
 }
 
-// Traverse Inorder
 void traverseInOrder(struct node *temp) {
   if (temp != NULL) {
     traverseInOrder(temp->left);
@@ -68,7 +64,6 @@ void traverseInOrder(struct node *temp) {
   }
 }
 
-// Traverse Postorder
 void traversePostOrder(struct node *temp) {
   if (temp != NULL) {
     traversePostOrder(temp->left);
